@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblack"
+    tools:context=".ImageLoader">
+
+    <TextView
+        android:id="@+id/email_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="email"
+        android:textColor="@color/yellow"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/Imageup_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_profile"
+
+        android:background="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="ImageUploader"
+        android:textColor="@color/yellow"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/name_uploader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Imageup_tv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/butt_edit"
+        android:hint="Name of the Folder"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/security_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_uploader"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/butt_edit"
+        android:hint="Security code setup"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/del_load"
+        android:layout_below="@id/security_code">
+        <Button
+            android:id="@+id/loader_image_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_password_register"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"
+            android:text="Share"
+            android:textColor="@color/yellow"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/delete_image_loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_below="@id/re_password_register"
+            android:backgroundTint="@color/grey"
+
+            android:background="@drawable/buttons"
+            android:fontFamily="sans-serif-light"
+            android:text="Stop"
+            android:textColor="@color/yellow"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/image_loader_todownloader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/logout_image_loader"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="sans-serif-light"
+        android:text="Download Image"
+        android:textColor="@color/yellow"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/logout_image_loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/butt_edit"
+        android:fontFamily="sans-serif-light"
+
+        android:text="Logout"
+        android:textColor="@color/yellow"
+        android:textSize="30dp" />
+
+
+
+</RelativeLayout>

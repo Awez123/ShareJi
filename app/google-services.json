@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "895487140593",
+    "firebase_url": "https://delete-6a64a-default-rtdb.firebaseio.com",
+    "project_id": "delete-6a64a",
+    "storage_bucket": "delete-6a64a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895487140593:android:4ba321f42ef35e94ffff50",
+        "android_client_info": {
+          "package_name": "com.example.firebase_try1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895487140593-5b8kl9jpho92ckd7g0jccc2s6oi9tabf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVyiV1ktC4bGRn5WFgxaNEbT1eIPXSFU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895487140593-5b8kl9jpho92ckd7g0jccc2s6oi9tabf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895487140593:android:28077ebfc8009f35ffff50",
+        "android_client_info": {
+          "package_name": "com.example.thephotothing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895487140593-5b8kl9jpho92ckd7g0jccc2s6oi9tabf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVyiV1ktC4bGRn5WFgxaNEbT1eIPXSFU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895487140593-5b8kl9jpho92ckd7g0jccc2s6oi9tabf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

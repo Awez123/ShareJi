@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblack"
+    tools:context=".Image_downloader">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="email"
+        android:textSize="16dp"
+        android:id="@+id/email_profile"/>
+
+    <TextView
+        android:id="@+id/Imageup_tv"
+        android:layout_below="@id/email_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="10dp"
+
+        android:text="Download"
+        android:textColor="@color/yellow"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/name_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Imageup_tv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/butt_edit"
+        android:hint="Name of the Folder"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="30dp" />
+    <EditText
+        android:id="@+id/security_code_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_download"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/butt_edit"
+        android:hint="Security code setup"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/search_download_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logout_download"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/transparentdarkdouble"
+        android:backgroundTintMode="screen"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Download All"
+        android:visibility="gone"
+        android:textColor="@color/yellow"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/search_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/security_code_download"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="src_atop"
+        android:background="@drawable/buttons"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Search"
+        android:textColor="@color/yellow"
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:layout_above="@+id/search_download_all"
+        android:layout_below="@+id/search_download"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+
+    <Button
+        android:id="@+id/logout_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/butt_edit"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Logout"
+        android:textColor="@color/yellow"
+        android:textSize="30dp" />
+
+</RelativeLayout>
